@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+        <link rel="shortcut icon" href="#"/>
+
+        <title>Scrawl Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Whiteboard, real time whiteboard">
+        <meta name="author" content="Eleonora G. e Luigi L. S.">
+        <link rel="stylesheet" href="CSS/style_whiteboard.css" />
+        <link rel="stylesheet" href="CSS/style_game.css" />
+    </head>
+ 
+ 
+    <body> 
+        <div class = "header">
+            <button id = "start-button">Start Game</button>
+            <button onClick = "createSession()" type = "button" id = "room">Create Room</button>
+            <input type="text" id = "join-session" maxlength = "8" placeholder="room code">
+            <button id = "join-button">Send</button>
+        </div>
+        <div class = "canvas-container">
+            <canvas id = "canvas" width = "700px;"   height= "500px;"></canvas>
+            <div class = "chat">
+                <b>Answer<input type = "text" id = "input-field" placeholder="Type some text..."></b>
+                <button id = "send-button">Send</button>
+                <div id = "output">
+
+                </div>
+            </div>
+        </div>
+        <div class = "tools">
+
+            <button onClick = "undo()" type = "button" class = "button">Undo</button>
+            <button onClick = "clear_canvas()" type = "button" class = "button">Clear</button>
+ 
+            <div onClick = "change_color('cyan')" class = "color-field" style = "background: cyan;"></div>
+            <div onClick = "change_color('blue')" class = "color-field" style = "background: blue;"></div>
+            <div onClick = "change_color('red')" class = "color-field" style = "background: red;"></div>
+            <div onClick = "change_color('green')" class = "color-field" style = "background: green;"></div>
+            <div onClick = "change_color('yellow')" class = "color-field" style = "background: yellow;"></div>
+            <div onClick = "change_color('purple')" class = "color-field" style = "background: purple;"></div>
+ 
+            <input onInput = "draw_color = this.value" type="color" class = "color-picker">
+            <input type="range" min = "1" max = "100" class = "pen-range" onInput = "draw_width = this.value">
+ 
+        </div>
+        <script src="http://cdn.socket.io/socket.io-1.4.5.js"></script>
+        <script src = "Javascript/JS_whiteboard.js"></script>
+        <script src = "Javascript/JS_Game_chat.js"></script>
+    </body>
+ 
+</html>

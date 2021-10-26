@@ -1,0 +1,124 @@
+html{
+    min-width: 800px;
+}
+
+body{
+    margin: 0;
+    padding: 30px;
+    background: linear-gradient(292deg, rgba(87,86,86,0.9948354341736695) 19%, rgba(69,68,68,1) 45%, rgba(28,28,28,1) 80%);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header button, input{
+    margin-bottom: 20px;
+}
+
+.header #room{
+    cursor: pointer;
+    color: white;
+    background:  linear-gradient(231deg, rgba(66, 66, 66, 1) 0%, rgba(20, 20, 20, 1) 100%);
+    border-radius: 7%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.header #join-session{
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5%;
+    width: 6em;
+}
+
+.header #join-button{
+    display: none;
+}
+
+#canvas-container {
+    display: flex;
+    justify-content: center;
+}
+
+canvas{
+    box-shadow: -3px 2px 9px 6px black; 
+  /*  image-rendering: optimizeSpeed;         
+  image-rendering: -moz-crisp-edges;         
+  image-rendering: -webkit-optimize-contrast; 
+  image-rendering: -o-crisp-edges;            
+  image-rendering: pixelated;                
+  -ms-interpolation-mode: nearest-neighbor;    */                      
+}
+ 
+.tools{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+ 
+.tools .color-field{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid rgb(136, 126, 126);
+    align-self: center;
+    margin: 0 15px;
+}
+ 
+.tools .button{
+    align-self: center;
+    width: 75px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    background:  linear-gradient(231deg, rgba(66, 66, 66, 1) 0%, rgba(20, 20, 20, 1) 100%);
+    border-radius: 7%;
+    font-weight: bold;
+    margin: 0 10px;
+}
+ 
+.color-picker{
+    border-color: rgb(88, 88, 88);
+    align-self: center;
+    margin: 0 10px;
+    height: 50px;
+}
+ 
+.pen-range{
+    align-self: center;
+    margin: 0 10px;
+}
+
+/*@media screen and (max-width:733px){
+    .tools{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .tools .color-field{
+        margin: 10px;
+    }
+
+    .tools .button{
+        margin: 10px;
+    }
+
+    .color-picker{
+        margin: 10px;
+    }
+
+}*/
