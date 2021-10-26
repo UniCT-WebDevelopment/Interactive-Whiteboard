@@ -1,6 +1,6 @@
 THE PROJECT:
 
-This is an Interactive Whiteboard made by the collaboration between Eleonora Giuffrida and Luigi La Spina, 
+This is an Interactive Whiteboard made by the collaboration between Eleonora Giuffrida (aka x-Lele-x) and Luigi La Spina, 
 students of University of Catania during the "Web development Design and Usability" course.
 In order to share the whiteboard, you need to open a Node.js command prompt, select project's directory,
 then starting the server (write "node server.js" on the command prompt).
